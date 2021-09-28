@@ -2,7 +2,8 @@ class Solution {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans=new ArrayList<>();
         int temp[]=new int[nums.length];
-      // -11 coz constarints are from -10 to 10 (for better way put integer.max_value )
+      // -11 coz constarints are from -10 to 10 (for better way make a boolean array which signifies whether an element is put in array or not )
+      
       // was 0 initially but was getting wrong coz nums[i]=0 in few cases
       
         Arrays.fill(temp, -11);
